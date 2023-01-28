@@ -1,0 +1,165 @@
+body {
+  background-color: #000000;
+  color: #837e9f;
+}
+
+.header,
+.article {
+  background-color: #302f3d;
+  border-radius: 6px;
+}
+
+.fullHeader {
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.profileHeader {
+  border: 1px solid red;
+
+  height: auto;
+  width: 300px;
+
+  padding: 5px 0 0 0;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.profileHeader img {
+  box-sizing: border-box;
+
+  height: auto;
+  width: 250px;
+
+  border-radius: 50%;
+}
+
+.socialHeader {
+  border: 1px solid red;
+
+  height: auto;
+  width: 300px;
+
+  box-sizing: border-box;
+
+  margin: 10px 0;
+}
+
+.tecnologiesHeader {
+  border: 1px solid red;
+
+  height: auto;
+  width: 300px;
+
+  box-sizing: border-box;
+
+  margin: 10px 0;
+}
+
+.experienceHeader {
+  border: 1px solid red;
+
+  height: auto;
+  width: 300px;
+
+  box-sizing: border-box;
+
+  margin: 10px 0;
+}
+
+.educationHeader {
+  border: 1px solid red;
+
+  height: auto;
+  width: 300px;
+
+  box-sizing: border-box;
+
+  margin: 10px 0;
+}
+
+.fullArticle {
+  box-sizing: border-box;
+  position: relative;
+
+  margin-left: 310px;
+}
+
+.mainProjects {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.mainProjects a{
+
+    border: 1px solid red;
+}
+
+.project1 {
+  border: 1px solid red;
+
+  height: 200px;
+  width: 49%;
+
+  box-sizing: border-box;
+
+  margin: 10px 0;
+
+  gap: 10px;
+
+  display: block;
+
+  position: absolute;
+}
+
+.project1 img,
+h3 {
+  display: inline-flex;
+
+  padding-right: 1em;
+}
+
+.project2 {
+  border: 1px solid red;
+
+  height: 200px;
+  width: 50%;
+
+  box-sizing: border-box;
+
+  margin: 10px 0 0 50%;
+
+  gap: 10px;
+
+  display: block;
+
+  position: relative;
+}
+
+.project2 img,
+h3 {
+  display: inline-flex;
+
+  padding-right: 1em;
+}
+
+.socialHeader li {
+  display: flex;
+
+  gap: 0.5em;
+
+  align-items: center;
+}
+
+.tecnologiesHeader li{
+    border-radius: 5px;
+    background-color: #CB92B1;
+    color: #000000;
+    display: inline-flex;
+    gap: 10px;
+}
