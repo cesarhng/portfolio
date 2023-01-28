@@ -1,165 +1,73 @@
-body {
-  background-color: #000000;
-  color: #837e9f;
-}
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
 
-.header,
-.article {
-  background-color: #302f3d;
-  border-radius: 6px;
-}
+  body{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
 
-.fullHeader {
-  box-sizing: border-box;
-  position: absolute;
-}
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 30vw 1fr;
+  }
 
-.profileHeader {
-  border: 1px solid red;
+  .header{
+    grid-area: "aside";
+    /* background-color: var(--bg-cards);
+    height: fit-content;*/
+    width: auto;
+    /*border: 1px solid red;*/
+  }
 
-  height: auto;
-  width: 300px;
+  .card{
+    grid-area: "aside";
+    background-color: var(--bg-cards);
+    height: auto;
+    width: auto;
+    border-radius: 1em;
+  }
 
-  padding: 5px 0 0 0;
+  .card img{
+    border-radius: 50%;
+    width: auto;
+  }
 
-  box-sizing: border-box;
+  .mainProjects{
+    grid-area: "header";
+    background-color: var(--bg-cards);
+    height: auto;
+    width: auto;
+    border-radius: 1em;
+    margin: 10px 0 10px 10px;
+  }
 
-  text-align: center;
-}
+  .project{
+    grid-area: "main";
+    background-color: var(--bg-cards);
+    height: auto;
+    width: auto;
+    border-radius: 1em;
+    margin: 10px 0 10px 10px;
+  }
 
-.profileHeader img {
-  box-sizing: border-box;
+  .profile{
+    grid-area: "aside";
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
 
-  height: auto;
-  width: 250px;
+  .profile img{
+    width: 100%;
+  }
 
-  border-radius: 50%;
-}
-
-.socialHeader {
-  border: 1px solid red;
-
-  height: auto;
-  width: 300px;
-
-  box-sizing: border-box;
-
-  margin: 10px 0;
-}
-
-.tecnologiesHeader {
-  border: 1px solid red;
-
-  height: auto;
-  width: 300px;
-
-  box-sizing: border-box;
-
-  margin: 10px 0;
-}
-
-.experienceHeader {
-  border: 1px solid red;
-
-  height: auto;
-  width: 300px;
-
-  box-sizing: border-box;
-
-  margin: 10px 0;
-}
-
-.educationHeader {
-  border: 1px solid red;
-
-  height: auto;
-  width: 300px;
-
-  box-sizing: border-box;
-
-  margin: 10px 0;
-}
-
-.fullArticle {
-  box-sizing: border-box;
-  position: relative;
-
-  margin-left: 310px;
-}
-
-.mainProjects {
-  border: 1px solid red;
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-.mainProjects a{
-
-    border: 1px solid red;
-}
-
-.project1 {
-  border: 1px solid red;
-
-  height: 200px;
-  width: 49%;
-
-  box-sizing: border-box;
-
-  margin: 10px 0;
-
-  gap: 10px;
-
-  display: block;
-
-  position: absolute;
-}
-
-.project1 img,
-h3 {
-  display: inline-flex;
-
-  padding-right: 1em;
-}
-
-.project2 {
-  border: 1px solid red;
-
-  height: 200px;
-  width: 50%;
-
-  box-sizing: border-box;
-
-  margin: 10px 0 0 50%;
-
-  gap: 10px;
-
-  display: block;
-
-  position: relative;
-}
-
-.project2 img,
-h3 {
-  display: inline-flex;
-
-  padding-right: 1em;
-}
-
-.socialHeader li {
-  display: flex;
-
-  gap: 0.5em;
-
-  align-items: center;
-}
-
-.tecnologiesHeader li{
-    border-radius: 5px;
-    background-color: #CB92B1;
-    color: #000000;
-    display: inline-flex;
-    gap: 10px;
-}
+  svg{
+    margin-right: 1em;
+  }
